@@ -1,0 +1,6 @@
+<ul><h1>{{ subject }}</h1>
+{% for note in subject.note_set.all %}
+    <li><a href="/notes/{{ subject.id }}/{{ note.id }}">{{ note.title }}</a></li>
+{% endfor %}
+</ul>
+

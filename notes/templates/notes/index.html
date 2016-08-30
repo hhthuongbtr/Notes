@@ -1,0 +1,9 @@
+{% if subject_list1 %}
+    <ul>
+    {% for subject in subject_list1 %}
+        <li><a href="/notes/{{ subject.id }}/">{{ subject.subject_name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No subject are available.</p>
+{% endif %}
